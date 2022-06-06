@@ -39,7 +39,7 @@ jobs:
       envName: "Staging"
       envUrl: "https://heather-dotnetweb-staging.azurewebsites.net/"
       slotName: "staging"
-      artifactName: "monaWeb"
+      artifactName: "heatherWeb"
     secrets:
       azureWebAppPublishProfile: ${{ secrets.azureWebAppPublishProfile }}
 
@@ -50,6 +50,6 @@ jobs:
       envName: "Prod"
       envUrl: "https://heather-dotnetweb.azurewebsites.net/"
       slotName: "production"
-      artifactName: "monaWeb"
+      artifactName: "heatherWeb"
     secrets:
       azureWebAppPublishProfile: ${{ secrets.azureWebAppPublishProfile }}
