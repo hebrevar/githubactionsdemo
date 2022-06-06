@@ -16,7 +16,7 @@ jobs:
     uses: damovisaInc/dotnetweb/.github/workflows/publish-to-azure.yml@main
     with:
       envName: "Staging"
-      envUrl: "https://mona-dotnetweb-staging.azurewebsites.net/"
+      envUrl: "https://heather-dotnetweb-staging.azurewebsites.net/"
       slotName: "staging"
     secrets:
       azureWebAppPublishProfile: ${{ secrets.azureWebAppPublishProfile }}
@@ -27,7 +27,7 @@ jobs:
     uses: damovisaInc/dotnetweb/.github/workflows/publish-to-azure.yml@main
     with:
       envName: "Prod"
-      envUrl: "https://mona-dotnetweb.azurewebsites.net/"
+      envUrl: "https://heather-dotnetweb.azurewebsites.net/"
       slotName: "production"
     secrets:
       azureWebAppPublishProfile: ${{ secrets.azureWebAppPublishProfile }}
