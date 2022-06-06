@@ -28,7 +28,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
-        name: monaWeb
+        name: heatherWeb
         path: ${{env.DOTNET_ROOT}}/dotnetweb 
 
 
