@@ -34,10 +34,10 @@ jobs:
 
   staging:
     needs: build
-    uses: damovisaInc/dotnetweb/.github/workflows/publish-to-azure.yml@main
+    uses: hebrevar/githubactionsdemo/.github/workflows/publish-to-azure.yml@main
     with:
       envName: "Staging"
-      envUrl: "https://mona-dotnetweb-staging.azurewebsites.net/"
+      envUrl: "https://heather-dotnetweb-staging.azurewebsites.net/"
       slotName: "staging"
       artifactName: "monaWeb"
     secrets:
@@ -45,10 +45,10 @@ jobs:
 
   prod:
     needs: staging
-    uses: damovisaInc/dotnetweb/.github/workflows/publish-to-azure.yml@main
+    uses: hebrevar/githubactionsdemo/.github/workflows/publish-to-azure.yml@main
     with:
       envName: "Prod"
-      envUrl: "https://mona-dotnetweb.azurewebsites.net/"
+      envUrl: "https://heather-dotnetweb.azurewebsites.net/"
       slotName: "production"
       artifactName: "monaWeb"
     secrets:
