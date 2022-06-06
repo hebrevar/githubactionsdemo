@@ -12,7 +12,7 @@ on:
       envUrl:
         description: "The URL to deploy to"
         required: true
-        default: "https://mona-dotnetweb-staging.azurewebsites.net/"
+        default: "https://heather-dotnetweb-staging.azurewebsites.net/"
         type: string
       slotName:
         description: "The Azure Web App Slot to deploy the app to"
