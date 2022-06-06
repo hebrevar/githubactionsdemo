@@ -13,7 +13,7 @@ on:
 
 jobs:
   staging:
-    uses: damovisaInc/dotnetweb/.github/workflows/publish-to-azure.yml@main
+    uses: hebrevar/githubactionsdemo/.github/workflows/publish-to-azure.yml@main
     with:
       envName: "Staging"
       envUrl: "https://heather-dotnetweb-staging.azurewebsites.net/"
@@ -24,7 +24,7 @@ jobs:
   prod:
     if: github.event.inputs.releaseType == 'prod'
     needs: [staging]
-    uses: damovisaInc/dotnetweb/.github/workflows/publish-to-azure.yml@main
+    uses: hebrevar/githubactionsdemo/.github/workflows/publish-to-azure.yml@main
     with:
       envName: "Prod"
       envUrl: "https://heather-dotnetweb.azurewebsites.net/"
