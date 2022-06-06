@@ -76,7 +76,7 @@ jobs:
     - name: 'Deploy to https://heather-dotnetweb.azurewebsites.net/'
       uses: azure/webapps-deploy@v2
       with: 
-        app-name: mona-dotnetweb
+        app-name: heather-dotnetweb
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}
         package: ${{env.DOTNET_ROOT}}/dotnetweb 
       
